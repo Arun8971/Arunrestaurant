@@ -1,28 +1,118 @@
-<html>
-     <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
 
-    <body>
-        <text>
-            <button style="height: 50px; width:140px; background-color: rgb(13, 230, 60);">
-                <b>STARTERS</b><br><br>
-            </button><br><br>
+    .menu-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-            <button>
-                "Click on the below items that you want to order"
-            </button><br><br>
+    button.category-button {
+      height: 50px;
+      width: 140px;
+      background-color: rgb(13, 230, 60);
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 16px rgba(13, 230, 60, 0.2);
+      transition: background-color 0.3s;
+    }
 
-            <b>1.</b>
-            <a href="paneer_tikka.html"><button>PANEER TIKKA</button></a><br><br>
+    button.category-button:hover {
+      background-color: rgb(11, 184, 48);
+    }
 
-            <b>2.</b>
-            <a href="aloo_tikki.html"><button>ALOO TIKKI CHAT</button></a><br><br>
+    button.instruction-button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 16px rgba(52, 152, 219, 0.2);
+      transition: background-color 0.3s;
+    }
 
-            <b>3.</b>
-            <a href="harabara_kabab.html"><button>HARA BHARA KABAB</button></a><br><br>
+    button.instruction-button:hover {
+      background-color: #2980b9;
+    }
 
-            
-        </text>
-    </body>
+    a.item-link {
+      text-decoration: none;
+      color: #000;
+      display: block;
+      text-align: left; /* Align text to the left */
+    }
+
+    button.item-button {
+      background-color: #ecf0f1;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 16px rgba(236, 240, 241, 0.2);
+      transition: background-color 0.3s;
+      display: inline-block;
+      text-align: left; /* Align text to the left */
+    }
+
+    button.item-button:nth-child(odd) {
+      background-color: #ecf0f1;
+    }
+
+    button.item-button:nth-child(even) {
+      background-color: #d5dbdb;
+    }
+
+    button.item-button:hover {
+      background-color: #bdc3c7;
+    }
+
+    span.item-number {
+      font-weight: bold;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container">
+    <button class="category-button"><b>STARTERS</b></button><br><br>
+
+    <button class="instruction-button">
+      "Click on the below items that you want to order"
+    </button><br><br>
+
+    <a href="paneer_tikka.html" class="item-link">
+      <span class="item-number">1.</span>
+      <button class="item-button">PANEER TIKKA</button>
+    </a><br>
+
+    <a href="aloo_tikki.html" class="item-link">
+      <span class="item-number">2.</span>
+      <button class="item-button">ALOO TIKKI CHAT</button>
+    </a><br>
+
+    <a href="harabara_kabab.html" class="item-link">
+      <span class="item-number">3.</span>
+      <button class="item-button">HARA BHARA KABAB</button>
+    </a><br>
+  </div>
+</body>
 </html>
