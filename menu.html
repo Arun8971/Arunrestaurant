@@ -1,23 +1,70 @@
-<html>
-  <head>
-    <meta content="Main Menu">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  
- <body>
-  <text>
-         <button>Note:"Click on the below categories that you want to order"</button><br><br>
-         <b>1.</b>
-         <a href="Curries_list.html"><button style="background-color: rgb(13, 230, 60); height: 50px; width: 150px">
-         <b>CURRIES</b></button></a><br><br>
-         
-         <b>2.</b>
-         <a href="starters_list.html"><button style="background-color: rgb(13, 230, 60); height: 50px; width:150px">
-         <b>STARTERS</b></button></a><br><br><br>
-         <b>⏪</b>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Menu</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
 
-         <a href="index.html"><button style="background-color: rgb(55, 192, 151); height: 30px; width: 130px;">
-         <b>Back</b></button>
-  </text>
- </body>
+    p {
+      margin-bottom: 20px;
+    }
+
+    ol {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: rgb(13, 230, 60);
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+      box-shadow: 0 8px 16px rgba(13, 230, 60, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: rgb(11, 184, 48);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p><strong>Note:</strong> Click on the below categories that you want to order</p>
+    <ol>
+      <li>
+        <a href="Curries_list.html">
+          <button>
+            <strong>CURRIES</strong>
+          </button>
+        </a>
+      </li>
+
+      <li>
+        <a href="starters_list.html">
+          <button>
+            <strong>STARTERS</strong>
+          </button>
+        </a>
+      </li>
+    </ol>
+  </div>
+</body>
 </html>
