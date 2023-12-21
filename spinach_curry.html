@@ -1,19 +1,68 @@
-<!--SPINACH AND CHICPEA CURRY image display-->
-<html>
-    <head>
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
 
-    <body>
-        <img src="spinach and chicpea curry.jpg"><br><br>
-        <text>
-            <b>Price: ₹340</b>
-        </text><br>
-       <button>"Note:Click on Buy_Now to place your order"</button><br><br>
-       <a href="pay.html">
-          <button style="background-color: antiquewhite;">
-            Buy_Now
-          </button>
-       </a>
-    </body>
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    text {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    a.button-link {
+      text-decoration: none;
+      color: #000;
+    }
+
+    button.buy-now {
+      background-color: #3498db;
+      color: #000;
+      transition: background-color 0.3s;
+    }
+
+    button.buy-now:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="spinach and chicpea curry.jpg" alt="Spinach and Chickpea Curry Image"><br><br>
+  <text><b>Price: ₹340</b></text><br>
+  <button>"Note: Click on Buy Now to place your order"</button><br><br>
+  <a href="pay.html" class="button-link">
+    <button class="buy-now">Buy Now</button>
+  </a>
+</body>
 </html>
