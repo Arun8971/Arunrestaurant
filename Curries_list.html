@@ -1,29 +1,97 @@
-<html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
 
-    <body>
-        <text>
-            <button style="height: 50px; width:140px; background-color: rgb(13, 230, 60);">
-                <b>CURRIES</b><br><br>
-            </button><br><br>
+    button.category-button {
+      height: 50px;
+      width: 140px;
+      background-color: rgb(13, 230, 60);
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 16px rgba(13, 230, 60, 0.2);
+      transition: background-color 0.3s;
+    }
 
-            <button>
-                "Click on the below items that you want to order"
-            </button><br><br>
+    button.category-button:hover {
+      background-color: rgb(11, 184, 48);
+    }
 
-            <b>1.</b>
-            <a href="paneer_masala.html"><button>PANEER MASALA</button></a><br><br>
+    button.instruction-button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 16px rgba(52, 152, 219, 0.2);
+      transition: background-color 0.3s;
+    }
 
-            <b>2.</b>
-            <a href="chana_masala.html"><button>CHANA MASALA</button></a><br><br>
+    button.instruction-button:hover {
+      background-color: #2980b9;
+    }
 
-            <b>3.</b>
-            <a href="vegetable_korma.html"><button>VEGETABLE KORMA</button></a><br><br>
+    a.item-link {
+      text-decoration: none;
+      color: #000;
+    }
 
-            <b>4.</b>
-            <a href="spinach_curry.html"><button>SPINACH AND CHICPEA CURRY</button></a><br><br>
-        </text>
-    </body>
+    button.item-button {
+      background-color: #ecf0f1;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 16px rgba(236, 240, 241, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    button.item-button:hover {
+      background-color: #bdc3c7;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="category-button"><b>CURRIES</b></button><br><br>
+
+  <button class="instruction-button">
+    "Click on the below items that you want to order"
+  </button><br><br>
+
+  <b>1.</b>
+  <a href="paneer_masala.html" class="item-link">
+    <button class="item-button">PANEER MASALA</button>
+  </a><br><br>
+
+  <b>2.</b>
+  <a href="chana_masala.html" class="item-link">
+    <button class="item-button">CHANA MASALA</button>
+  </a><br><br>
+
+  <b>3.</b>
+  <a href="vegetable_korma.html" class="item-link">
+    <button class="item-button">VEGETABLE KORMA</button>
+  </a><br><br>
+
+  <b>4.</b>
+  <a href="spinach_curry.html" class="item-link">
+    <button class="item-button">SPINACH AND CHICKPEA CURRY</button>
+  </a><br><br>
+</body>
 </html>
