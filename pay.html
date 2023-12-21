@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .tick-mark {
+      color: #00fa08;
+      font-size: 100px;
+      animation: bounce 0.8s ease-in-out infinite;
+    }
+
+    .message {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="tick-mark">&#10004;</div>
+    <div class="message">Order Received!</div>
+  </div>
+</body>
+</html>
