@@ -1,23 +1,81 @@
-<html>
-  <head>
-    <title>My first Website</title>
-    <meta restaurant_name="Arun's_Restaurant">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arun's Restaurant</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
 
-  <body>
-    <h1><strong>Arun's Restaurant</strong></h1><br><br>
-    <h2><strong>🟢Pure Veg</strong></h2><br>
-    <img src="Chef1.jpg"><br>
-    
-    <button>
-      <text>"Note:Click on the below button to get the menu"</text>
-    </button><br><br>
+    h1 {
+      color: #000;
+      font-size: 56px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      font-weight: bold;
+    }
 
-    <a href="menu.html">
-    <button style="background-color: rgb(26, 144, 148); height: 50px;width: 150px;"><b>MENU</b></button><br><br>
-    </a>
-  </body>
+    h2 {
+      color: #43a047;
+    }
+
+    button.note-button {
+      background-color: #1a90e4;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      display: inline-block;
+      box-shadow: 0 8px 16px rgba(26, 144, 228, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    button.note-button:hover {
+      background-color: #156fb3;
+    }
+
+    a.menu-link {
+      text-decoration: none;
+    }
+
+    button.menu-button {
+      background: linear-gradient(45deg, #ffcc29, #f06363);
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: 2px solid #e44d26; /* Border color for the Menu button */
+      cursor: pointer;
+      margin-top: 20px;
+      display: inline-block;
+      box-shadow: 0 8px 16px rgba(255, 204, 41, 0.2);
+      transition: background 0.3s;
+    }
+
+    button.menu-button:hover {
+      background: linear-gradient(45deg, #ffa500, #e44d26);
+    }
+  </style>
+</head>
+
+<body>
+  <h1><strong>Arun's Restaurant</strong></h1><br><br>
+  <h2><strong>🟢 Pure Veg</strong></h2><br>
+  <img src="Chef1.jpg">
+  
+  <button class="note-button">
+    <text>Note: Click on the button below to view the menu</text>
+  </button><br><br>
+
+  <a href="menu.html" class="menu-link">
+    <button class="menu-button"><b>MENU</b></button>
+  </a><br><br>
+</body>
 </html>
-
-
